@@ -18,7 +18,5 @@ async function LoginForm({ searchParams }: LoginPageProps) {
   const error = Array.isArray(params.error) ? params.error[0] : params.error;
   const nextPath = Array.isArray(params.next) ? params.next[0] : params.next;
 
-  return (
-    <AuthForm mode="login" initialError={error} nextPath={nextPath} />
-  );
+  return <AuthForm mode="login" initialError={error} nextPath={nextPath} />;
 }

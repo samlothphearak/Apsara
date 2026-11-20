@@ -21,6 +21,16 @@ export type Post = {
   updated_at: string;
 };
 
+export type PostMedia = {
+  id: string;
+  post_id: string;
+  media_url: string;
+  media_type: "image" | "video";
+  cloudinary_public_id: string | null;
+  cloudinary_format: string | null;
+  created_at: string;
+};
+
 export type Comment = {
   id: string;
   post_id: string;

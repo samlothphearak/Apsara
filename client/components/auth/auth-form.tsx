@@ -493,7 +493,7 @@ export default function AuthForm({
                 required
                 disabled={isBusy}
                 type={showPassword ? "text" : "password"}
-                minLength={8}
+                minLength={mode === "register" ? 8 : undefined}
                 autoComplete={
                   mode === "register" ? "new-password" : "current-password"
                 }
